@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0px;
+    padding: 0;
+    border: none;
+    height:100vh;
+    width: auto;
+    background-image: url("../assets/bg-image-1.png");
+    background-size: cover;
+}
