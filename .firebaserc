@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pbcastlerea": {
+      "hosting": {
+        "magdaapp": [
+          "pbcastlerea"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pbcastlerea"
+  }
+}

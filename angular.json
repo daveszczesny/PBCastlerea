@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "magdaApp": {
+    "magdaapp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "magdaApp:build:production"
+              "buildTarget": "magdaapp:build:production"
             },
             "development": {
-              "buildTarget": "magdaApp:build:development"
+              "buildTarget": "magdaapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "magdaApp:build"
+            "buildTarget": "magdaapp:build"
           }
         },
         "test": {
@@ -88,6 +88,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "magdaapp:build:production",
+              "serveTarget": "magdaapp:serve:production"
+            },
+            "development": {
+              "buildTarget": "magdaapp:build:development",
+              "serveTarget": "magdaapp:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

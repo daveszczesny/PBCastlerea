@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "magdaapp",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
