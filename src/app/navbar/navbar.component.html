@@ -1,0 +1,30 @@
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno&display=swap">
+
+
+<div class="app-navbar">
+    <img class="logo-image" id="logo_image" src={{logo_img}} alt="Logo image"
+        (click)="goHome()"/>
+    <div class="nav-bar-clickables">
+        <div class="nav-bar-links">
+            <a 
+                class="nav-bar-link-button" 
+                routerLink="/services"
+                routerLinkActive="activebutton">Services</a> <span> | </span>
+            <a 
+                class="nav-bar-link-button" 
+                routerLink="/gallery"
+                routerLinkActive="activebutton">Gallery</a> <span> | </span>
+            <a 
+                class="nav-bar-link-button" 
+                routerLink="/contactus"
+                routerLinkActive="activebutton">Contact Us</a>
+        </div>
+    
+        <div class="nav-bar-social-media-links">
+            <img src={{facebook_img}} alt="facebook_img"/>
+            <img src={{instagram_img}} alt="instagram_img"/>
+        </div>
+    </div>
+
+</div>

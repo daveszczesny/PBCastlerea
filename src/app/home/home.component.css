@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    size: 1000px;
+
+
+
+    background-image: url("../../assets/bg-image-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Additional styles as needed */
+    margin: -10px; /* Remove default body margin */
+    height: 105vh; /* Set body height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+
+    /* make page non-scrollable */
+    overflow: hidden;
+}
