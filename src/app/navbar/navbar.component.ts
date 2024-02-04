@@ -17,6 +17,15 @@ export class NavbarComponent {
 goHome() {
  this.router.navigate(['']) 
 }
+
+goFacebook(){
+  window.location.href='https://www.facebook.com/pedicureCastlerea/';
+}
+
+goInsta(){
+  window.location.href='https://www.instagram.com/pedicure_browscastlerea/';
+}
+
 instagram_img: string = "../../assets/instagram.png";
 facebook_img: string = "../../assets/facebook.png"
 logo_img: string = "../../assets/logo-image.png"
