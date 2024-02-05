@@ -32,5 +32,6 @@ export class DataServiceService {
 
 export interface ServiceItem{
   id:string,
-  description: string
+  description: string,
+  url: string,
 };
