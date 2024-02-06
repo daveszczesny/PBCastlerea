@@ -25,7 +25,7 @@ markerOptions: google.maps.MarkerOptions = {
 }
 
 googleMaps(){
-  window.location.href = 'https://www.google.com/maps/dir//53.7679903,-8.4892283/@53.7677747,-8.4894107,19z/data=!4m2!4m1!3e3?entry=ttu'
+  window.open('https://www.google.com/maps/dir//53.7679903,-8.4892283/@53.7677747,-8.4894107,19z/data=!4m2!4m1!3e3?entry=ttu');
 }
 
 }
