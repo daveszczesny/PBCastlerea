@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url("../../assets/background-image-services.jpg");
+    background-size: cover;
+    background-position: center center;
+    /* Additional styles as needed */
+    margin: -10px; /* Remove default body margin */
+    height:150vh; /* Set body height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.services-title {
+    margin-left: 3vw;
+}
+
+.services-title h1 {
+    font-family: 'Italianno', sans-serif;
+    font-size: clamp(3em, 3.2em, 3.5em);
+    font-weight: lighter;
+}
+
+
+
+.services-offered{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    margin: 0;
+    margin-top: 8vh;
+    
+    justify-content: center ;
+}
+
+.service-item {
+    margin: 3vw;
+    margin-bottom: 16vh;
+
+    width: 20vw;
+    height: 15vw;
+}
+
+.service-item p {
+    transform: translateY(10vw);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.service-item-background{
+    background-color: rgb(240,192,192);
+    border-radius: 70px;
+    width: 15vw;
+    height: 17vw;
+
+    box-shadow: 0 5px 5.3px rgba(0,0,0,0.45);
+}
+
+
+
+.service-url-image {
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+
+    box-shadow: 0 3px 5.3px rgba(0,0,0,0.35);
+    transform: translateY(-23vw);
+}

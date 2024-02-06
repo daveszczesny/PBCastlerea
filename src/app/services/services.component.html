@@ -1,1 +1,22 @@
-<app-navbar/>
+
+<div class="container">
+    <app-navbar/>
+
+    <div class="services-title">
+        <h1>What we Offer</h1>
+    </div>
+
+    <div class="services-offered">
+            <div *ngFor="let service of services$ | async">
+                <div class="service-item" *ngIf="service.url != null">
+                    <div class="service-item-background">
+                        <p>{{service.id}}</p>
+                    </div>
+                    <img loading="lazy" class="service-url-image" src={{service.url}} alt="image" />
+                </div>
+                
+            </div>
+
+    </div>
+
+</div>
