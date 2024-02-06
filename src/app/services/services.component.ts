@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 
 import { DataServiceService, ServiceItem } from '../data-service.service';
 import { Observable } from 'rxjs';
+import { MapComponent } from '../map/map.component';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [NavbarComponent, CommonModule],
+  imports: [NavbarComponent, CommonModule, MapComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })
