@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collection, getDocs } from '@angular/fire/firestore';
+import { DocumentSnapshot, Firestore, collection, doc, getDoc, getDocs } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -27,6 +27,24 @@ export class DataServiceService {
     })
   }
   
+
+  getService(serviceId: string): Observable<any> {
+    const docRef = doc(this.firestore, 'services', serviceId);
+
+    return new Observable<any>(observer => {
+      getDoc(docRef).then((docSnapshot: DocumentSnapshot<any>) => {
+        if (docSnapshot.exists()) {
+          const data = docSnapshot.data();
+          observer.next(data);
+        } else {
+          observer.next(null);
+        }
+      }).catch(error => {
+        observer.error(error); // Emit error if any
+      });
+    });
+  }
+
 }
 
 
@@ -35,3 +53,8 @@ export interface ServiceItem{
   description: string,
   url: string,
 };
+
+export interface ServiceObject {
+  description: string,
+  url: string,
+}
