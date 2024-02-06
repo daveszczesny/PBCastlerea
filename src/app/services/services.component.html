@@ -12,7 +12,12 @@
                     <div class="service-item-background">
                         <p>{{service.id}}</p>
                     </div>
-                    <img loading="lazy" class="service-url-image" src={{service.url}} alt="image" />
+                    <img 
+                        loading="lazy"
+                        class="service-url-image" 
+                        src={{service.url}} 
+                        (click)="navigateToServiceDetail(service.id)"
+                        alt="image" />
                 </div>
                 
             </div>

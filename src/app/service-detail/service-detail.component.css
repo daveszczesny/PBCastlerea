@@ -1,0 +1,54 @@
+.container{
+    background-image: url("../../assets/background-image-services.jpg");
+    background-size: cover;
+    background-position: center center;
+    /* Additional styles as needed */
+    margin: -10px; /* Remove default body margin */
+    height:100vh; /* Set body height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.sd-image {
+    margin: 5vw;
+}
+
+.sd-image img{
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    box-shadow: 0 3px 5.3px rgba(0,0,0,0.35);
+    border: 0.3px solid black;
+
+    transform: translateY(-35vw);
+}
+
+.sd-image-border {
+    background-color: rgba(255,255,255, 0.35);
+    border: 2px solid rgb(240,192,192); 
+    border-radius: 70px;
+    width: 80vw;
+    height: 30vw;
+
+    margin-top: 18vh;
+    margin-left: 4.5vw;
+}
+
+.sd-image-border h1{
+    text-align: center;
+    font-family: 'Italianno', sans-serif;
+    font-weight: lighter;
+    font-size: 4em;
+    text-decoration: 2px underline;
+}
+
+.sd-image-border p{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.4em;
+
+}
+
