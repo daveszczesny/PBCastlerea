@@ -19,11 +19,11 @@ goHome() {
 }
 
 goFacebook(){
-  window.location.href='https://www.facebook.com/pedicureCastlerea/';
+  window.open('https://www.facebook.com/pedicureCastlerea/');
 }
 
 goInsta(){
-  window.location.href='https://www.instagram.com/pedicure_browscastlerea/';
+  window.open('https://www.instagram.com/pedicure_browscastlerea/');
 }
 
 instagram_img: string = "../../assets/instagram.png";

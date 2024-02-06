@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno&display=swap">
+
+<div class="map-component-container">
+
+<div class="map-title-container">
+    <h1>Where to find us</h1>
+</div>
+
+<div class="map-container">
+    <google-map 
+        height="35vh"
+        width="100vw"
+        [center]="center"
+        [zoom]="zoom"
+        [options]="mapOptions"
+        (click)="googleMaps()"
+    >
+        <map-marker [position]="markerPosition" [options]="markerOptions" />
+    </google-map>
+</div>
+</div>

@@ -9,7 +9,7 @@ body{
     background-position: center center;
     /* Additional styles as needed */
     margin: -10px; /* Remove default body margin */
-    height:150vh; /* Set body height to 100% of the viewport height */
+    height:auto; /* Set body height to 100% of the viewport height */
     display: flex;
     flex-direction: column;
     align-self: center;
