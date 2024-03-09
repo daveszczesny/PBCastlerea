@@ -3,21 +3,8 @@ body {
   padding: 0;
 }
 
-.container {
-  background: linear-gradient(
-    180deg,
-    rgba(153, 148, 140, 0.2) 30%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  margin: -10px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-self: center;
-}
 .services-title {
-  margin-left: 3vw;
+  margin-left: 4vw;
 }
 
 .services-title h1 {
@@ -27,6 +14,19 @@ body {
 }
 
 @media (min-width: 76em) {
+  .container {
+    background: linear-gradient(
+      180deg,
+      rgba(153, 148, 140, 0.2) 30%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    margin: -10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+  }
   .services-offered {
     display: flex;
     flex-direction: row;
@@ -76,6 +76,19 @@ body {
 }
 
 @media (max-width: 76em) {
+  .container {
+    background: linear-gradient(
+      180deg,
+      rgba(153, 148, 140, 0.2) 30%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    margin: -10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+  }
   .services-offered {
     display: flex;
     flex-direction: row;
@@ -124,6 +137,19 @@ body {
 }
 
 @media (max-width: 45em) {
+  .container {
+    background: linear-gradient(
+      180deg,
+      rgba(153, 148, 140, 0.2) 30%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    margin: -20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+  }
   .services-offered {
     display: flex;
     flex-direction: column;
@@ -133,7 +159,7 @@ body {
     margin-bottom: 130vw;
     height: 15vw;
 
-    margin-left: 10vw;
+    margin-left: 13vw;
     margin-right: 10vw;
   }
 

@@ -1,99 +1,84 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 31em){
-    .container{
-        size: 1000px;
-        background-image: url("../../assets/bg-image-1.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        /* Additional styles as needed */
-        margin: -10px; /* Remove default body margin */
-        height: 105vh; /* Set body height to 100% of the viewport height */
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-self: center;
-    
-        /* make page non-scrollable */
-        overflow: hidden;
-    }
-    
-    .home-h1{
-    
-        display: flex;
-        justify-content: center;
-        margin-top: 3%;
-        user-select: none;
-    }
-    
-    
-    .home-h1 h1{
-        font-size: 7em;
-        text-align: center;
-        font-family: 'Italianno', sans-serif;
-        display: inline-block;
-        width: 42%;
-        font-weight: lighter;
-        word-spacing: 1.3vw;
-    
-    
-    }
-    
-    .home-h1 h1::before {
-        content: '';
-        display: inline-block;
-        height: 1.2em;
-    }
-}
+@media (min-width: 31em) {
+  .container {
+    size: 1000px;
+    background-image: url("../../assets/bg-image-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: -10px;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    overflow: hidden;
+  }
 
+  .home-h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    user-select: none;
+  }
+
+  .home-h1 h1 {
+    font-size: 7em;
+    text-align: center;
+    font-family: "Italianno", sans-serif;
+    display: inline-block;
+    width: 42%;
+    font-weight: lighter;
+    word-spacing: 1.3vw;
+  }
+
+  .home-h1 h1::before {
+    content: "";
+    display: inline-block;
+    height: 1.2em;
+  }
+}
 
 @media (max-width: 30em) {
-    .container{
-        size: 1000px;
-        background-image: url("../../assets/bg-image-1.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        /* Additional styles as needed */
-        margin: -20px; /* Remove default body margin */
-        height: 105vh; /* Set body height to 100% of the viewport height */
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-self: center;
-    
-        /* make page non-scrollable */
-        overflow: hidden;
-    }
-    
-    .home-h1{
-    
-        display: flex;
-        justify-content: center;
-        margin-top: 40%;
-        user-select: none;
-    }
-    
-    
-    .home-h1 h1{
-        font-size: 4em;
-        text-align: center;
-        font-family: 'Italianno', sans-serif;
-        display: inline-block;
-        width: 75%;
-        font-weight: lighter;
-        word-spacing: 1.7vw;
-    
-    
-    }
-    
-    .home-h1 h1::before {
-        content: '';
-        display: inline-block;
-        height: 1.2em;
-    }
+  .container {
+    size: 1000px;
+    background-image: url("../../assets/bg-image-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: -20px;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    overflow: hidden;
+  }
+
+  .home-h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40%;
+    user-select: none;
+  }
+
+  .home-h1 h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: "Italianno", sans-serif;
+    display: inline-block;
+    width: 75%;
+    font-weight: lighter;
+    word-spacing: 1.7vw;
+  }
+
+  .home-h1 h1::before {
+    content: "";
+    display: inline-block;
+    height: 1.2em;
+  }
 }

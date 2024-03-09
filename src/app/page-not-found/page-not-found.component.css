@@ -13,6 +13,12 @@ body {
   justify-self: center;
 }
 
+@media (max-width: 30em){
+  .container{
+    margin: -20px;
+  }
+}
+
 
 h1 {
     display: flex;
