@@ -156,7 +156,7 @@ body {
   }
 
   .service-item {
-    margin-bottom: 130vw;
+    margin-bottom: 140vw;
     height: 15vw;
 
     margin-left: 13vw;
@@ -183,7 +183,7 @@ body {
     background-color: rgb(240, 192, 192);
 
     width: 80vw;
-    height: 140vw;
+    height: 150vw;
   }
 
   .service-url-image {
