@@ -1,29 +1,31 @@
-
 <div class="container">
-    <app-navbar/>
+  <app-navbar />
 
-    <div class="services-title">
-        <h1>What we Offer</h1>
+  <div class="services-title">
+    <h1>What we Offer</h1>
+  </div>
+
+  <div class="services-offered" id="services_offered">
+    <div *ngFor="let service of services$ | async">
+      <div class="service-item" *ngIf="service.bucketUrl != null">
+        <div class="service-item-background">
+          <img
+            loading="lazy"
+            class="service-url-image"
+            [src]="service.bucketUrl"
+            (click)="navigateToServiceDetail(service.id)"
+            alt="image"
+          />
+          <span class="service-item-id"
+            ><p>{{ service.id }}</p></span
+          >
+          <span class="service-item-desc"
+            ><p>{{ service.description }}</p></span
+          >
+        </div>
+      </div>
     </div>
-
-    <div class="services-offered">
-            <div *ngFor="let service of services$ | async">
-                <div class="service-item" *ngIf="service.url != null">
-                    <div class="service-item-background">
-                        <p>{{service.id}}</p>
-                    </div>
-                    <img 
-                        loading="lazy"
-                        class="service-url-image" 
-                        src={{service.url}} 
-                        (click)="navigateToServiceDetail(service.id)"
-                        alt="image" />
-                </div>
-                
-            </div>
-
-    </div>
-
+  </div>
 </div>
 
 <app-map />

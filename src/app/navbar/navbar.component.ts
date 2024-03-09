@@ -14,21 +14,21 @@ export class NavbarComponent {
   constructor(private router: Router){}
 
   /* Navigate back home */
-goHome() {
- this.router.navigate(['']) 
-}
+  goHome() {
+    this.router.navigate(['/']) 
+  }
 
-goFacebook(){
-  window.open('https://www.facebook.com/pedicureCastlerea/');
-}
+  goFacebook(){
+    window.open('https://www.facebook.com/pedicureCastlerea/');
+  }
 
-goInsta(){
-  window.open('https://www.instagram.com/pedicure_browscastlerea/');
-}
+  goInsta(){
+    window.open('https://www.instagram.com/pedicure_browscastlerea/');
+  }
 
-instagram_img: string = "../../assets/instagram.png";
-facebook_img: string = "../../assets/facebook.png"
-logo_img: string = "../../assets/logo-image.png"
+  instagram_img: string = "../../assets/instagram.png";
+  facebook_img: string = "../../assets/facebook.png"
+  logo_img: string = "../../assets/logo-image.png"
 
 
 

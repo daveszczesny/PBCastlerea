@@ -1,74 +1,158 @@
 
-.app-navbar {
+@media (min-width: 45em) {
 
-    background-color: rgba(255,255,255,0.35);    
+    .app-navbar {
 
-    display: flex;
-    flex-direction: row;
+        background-color: rgba(255,255,255,0.35);    
+    
+        display: flex;
+        flex-direction: row;
+    
+        height: 10vh;
+        
+    }
+    
+    .logo-image{
+        cursor: pointer;
+        margin-left: 1vw;
+        user-select: none;
+        z-index: 1000;
+    }
+    
+    
+    .nav-bar-clickables {
+        display: flex;
+        margin-right: 15px;
+        margin-left: auto;
+    
+    }
+    .app-navbar-links{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5vw;
 
-    height: 10vh;
+        transform: translateY(-10vh);
+    }
+
+    .nav-bar-links {
+        display: flex;
+        flex-direction: row;
+        
+        margin-right: 10vw;
+        padding-top: 2vh;
+        user-select: none;
+    }
+    
+    .nav-bar-links span {
+        margin-top: 3vh;
+        color: rgba(255,255,255,0.6);
+    }
+    
+    .nav-bar-links a{
+    
+        text-decoration: none;
+        color: black;
+    
+        margin: 10px;
+        margin-right: 1.2vw;
+        margin-left: 1.2vw;
+        padding: 5px;
+        font-size:  3.5vh;
+    
+        font-family: "Italianno", sans-serif;
+    }
+    
+    .nav-bar-social-media-links{
+        margin-right: 3vw;
+        z-index: 1000;
+    }
+    
+    .nav-bar-social-media-links img{
+        cursor: pointer;
+        width: clamp(3vh, 3.5vh, 4.5vh);
+        height: auto;
+        margin-right: 0.4vw;
+        margin-left: 0.4vw;
+    
+        margin-top: 40%;
+        margin-bottom: auto;
+        user-select: none;
+    }
     
 }
 
-.logo-image{
-    cursor: pointer;
-    margin-left: 1vw;
-    user-select: none;
-}
+@media (max-width: 45em) {
 
-.logo-image img{
-    width: 100%;
-    height: auto;
-
-}
-
-.nav-bar-clickables {
-    display: flex;
-    margin-right: 15px;
-    margin-left: auto;
-
-}
-
-.nav-bar-links {
-    display: flex;
-    flex-direction: row;
+    .app-navbar {
+        background-color: rgba(255,255,255,0.35);        
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+    }
     
-    margin-right: 10vw;
-    padding-top: 2vh;
-    user-select: none;
-}
+    .logo-image{
+        cursor: pointer;
+        margin-left: 1vw;
+        user-select: none;
+    }
+    
+    .logo-image img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .nav-bar-clickables {
+        display: flex;
+        margin-right: 15px;
+        margin-left: auto;
+    }
+    
+    .app-navbar-links{
+        display: flex;
+        justify-content: center;
+    }
 
-.nav-bar-links span {
-    margin-top: 3vh;
-    color: rgba(255,255,255,0.6);
-}
+    .nav-bar-links {
+        display: flex;
+        flex-direction: row;
+        
+        padding-top: 0.5vh;
+        user-select: none;
+    }
+    
+    .nav-bar-links span {
+        margin-top: 3vh;
+        color: rgba(255,255,255,0.6);
+    }
+    
+    .nav-bar-links a{
+    
+        text-decoration: none;
+        color: white;
+    
+        margin: 20px;
 
-.nav-bar-links a{
+        font-weight: lighter;
+        font-size:  1.8em;
+    
+        font-family: "Italianno", sans-serif;
+    }
+    
+    .nav-bar-social-media-links{
+        margin-right: 3vw;
 
-    text-decoration: none;
-    color: black;
-
-    margin: 10px;
-    margin-right: 1.2vw;
-    margin-left: 1.2vw;
-    padding: 5px;
-    font-size:  3.5vh;
-
-    font-family: "Italianno", sans-serif;
-}
-
-.nav-bar-social-media-links{
-    margin-right: 3vw;
-}
-
-.nav-bar-social-media-links img{
-    cursor: pointer;
-    width: clamp(3vh, 3.5vh, 4.5vh);
-    height: auto;
-    margin-right: 0.4vw;
-    margin-left: 0.4vw;
-
-    margin-top: 40%;
-    margin-bottom: auto;
-    user-select: none;
+    }
+    
+    .nav-bar-social-media-links img{
+        cursor: pointer;
+        width: clamp(3vh, 3.5vh, 4.5vh);
+        height: auto;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    
+        margin-top: 40%;
+        margin-bottom: auto;
+        user-select: none;
+    }
+    
 }

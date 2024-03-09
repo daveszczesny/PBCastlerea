@@ -12,19 +12,21 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [NavbarComponent, CommonModule, MapComponent],
   templateUrl: './services.component.html',
-  styleUrl: './services.component.css'
+  styleUrl: './services.component.css',
 })
 export class ServicesComponent {
-services$: Observable<ServiceItem[]> | undefined;
+  services$: Observable<ServiceItem[]> | undefined;
 
-constructor(private dataService: DataServiceService, private router: Router) {}
+  constructor(
+    private dataService: DataServiceService,
+    private router: Router
+  ) {}
 
-ngOnInit() {
-  this.services$ = this.dataService.getData();
-}
+  ngOnInit() {
+    this.services$ = this.dataService.getData();
+  }
 
-navigateToServiceDetail(serviceId: string) {
-  this.router.navigate(['/services', serviceId]);
-}
-
+  navigateToServiceDetail(serviceId: string) {
+    this.router.navigate(['/services', serviceId]);
+  }
 }
