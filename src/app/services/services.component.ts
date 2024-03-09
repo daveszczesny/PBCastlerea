@@ -25,8 +25,4 @@ export class ServicesComponent {
   ngOnInit() {
     this.services$ = this.dataService.getData();
   }
-
-  navigateToServiceDetail(serviceId: string) {
-    this.router.navigate(['/services', serviceId]);
-  }
 }
