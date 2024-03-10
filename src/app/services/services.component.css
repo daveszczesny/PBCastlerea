@@ -15,10 +15,11 @@ body {
 
 @media (min-width: 76em) {
   .container {
+
     background: linear-gradient(
-      180deg,
-      rgba(153, 148, 140, 0.2) 30%,
-      rgba(255, 255, 255, 1) 100%
+      0deg,
+      rgba(255,241,224, 0.4) 60%,
+      rgba(255,217,235, 0.25) 100%
     );
     margin: -10px;
     height: auto;
@@ -70,7 +71,6 @@ body {
   .service-url-image {
     width: 20vw;
     height: 15vw;
-    /* transform: translateY(-285%);     */
     box-shadow: 0 5px 5.3px rgba(0, 0, 0, 0.05);
   }
 }
@@ -78,9 +78,9 @@ body {
 @media (max-width: 76em) {
   .container {
     background: linear-gradient(
-      180deg,
-      rgba(153, 148, 140, 0.2) 30%,
-      rgba(255, 255, 255, 1) 100%
+      0deg,
+      rgba(255,241,224, 0.4) 60%,
+      rgba(255,217,235, 0.25) 100%
     );
     margin: -10px;
     height: auto;
@@ -139,9 +139,9 @@ body {
 @media (max-width: 45em) {
   .container {
     background: linear-gradient(
-      180deg,
-      rgba(153, 148, 140, 0.2) 30%,
-      rgba(255, 255, 255, 1) 100%
+      0deg,
+      rgba(255,241,224, 0.4) 60%,
+      rgba(255,217,235, 0.25) 100%
     );
     margin: -20px;
     height: auto;
