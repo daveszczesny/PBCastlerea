@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { DataServiceService, ServiceItem } from '../data-service.service';
 import { Observable } from 'rxjs';
 import { MapComponent } from '../map/map.component';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-services',
@@ -16,11 +16,14 @@ import { Router } from '@angular/router';
 })
 export class ServicesComponent {
   services$: Observable<ServiceItem[]> | undefined;
+  hideNavbar: boolean | undefined;
 
   constructor(
     private dataService: DataServiceService,
-    private router: Router
-  ) {}
+    private route: ActivatedRoute
+  ) {
+    this.hideNavbar = this.route.snapshot.url.length <= 0;
+  }
 
   ngOnInit() {
     this.services$ = this.dataService.getData();

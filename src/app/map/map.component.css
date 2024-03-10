@@ -16,6 +16,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2vh;
+        margin-top: 10vh;
     }
     
     .map-component-container h1 {
@@ -25,7 +26,7 @@
     }
     
     .map-container {
-        margin-bottom: 15vh;
+        margin-bottom: 5vh;
     }
 }
 
@@ -59,7 +60,6 @@
 
     .map-container {
         max-height: 5vh;
-
-        margin-bottom: 40vh;
+        margin-bottom: 5vh;
     }
 }
